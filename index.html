@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genz'Q Clothing - Modern Women's Apparel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(45deg, #FFE5E5, #FFF0F5);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-pink-600">Genz'Q</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-pink-600">Home</a>
+                    <a href="#new-arrivals" class="text-gray-600 hover:text-pink-600">New Arrivals</a>
+                    <a href="#categories" class="text-gray-600 hover:text-pink-600">Categories</a>
+                    <a href="#contact" class="text-gray-600 hover:text-pink-600">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-600 hover:text-pink-600"><i class="bi bi-search"></i></button>
+                    <button class="text-gray-600 hover:text-pink-600"><i class="bi bi-cart"></i></button>
+                    <button class="md:hidden text-gray-600"><i class="bi bi-list"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-20">
+        <div class="container mx-auto px-4 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6">Style Your Story</h1>
+                <p class="text-lg text-gray-600 mb-8">Use code <span class="font-semibold">WELCOME10</span> for 10% off on orders above ₹2500</p>
+                <button class="bg-pink-600 text-white px-8 py-3 rounded-full hover:bg-pink-700 transition">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section id="new-arrivals" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">New Arrivals</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product Cards -->
+                <div class="product-card bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105" alt="Product" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Floral Summer Dress</h3>
+                    <p class="text-gray-600 mb-4">₹1,999</p>
+                    <button class="w-full bg-pink-100 text-pink-600 py-2 rounded hover:bg-pink-200 transition">Select Options</button>
+                </div>
+                <!-- Repeat for other products -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Shop By Category</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Category Cards -->
+                <div class="relative overflow-hidden rounded-lg group">
+                    <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3" alt="Popular" class="w-full h-80 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <h3 class="text-white text-xl font-semibold">Popular This Week</h3>
+                    </div>
+                </div>
+                <!-- Repeat for other categories -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="text-gray-600 mb-4">"Love the quality and style! Perfect for my daily wear."</p>
+                    <p class="font-semibold">- Sarah M.</p>
+                </div>
+                <!-- Repeat for other testimonials -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+                        <div class="space-y-4">
+                            <p><i class="bi bi-telephone"></i> +91 98765 43210</p>
+                            <p><i class="bi bi-envelope"></i> hello@genzq.com</p>
+                            <p><i class="bi bi-geo-alt"></i> 123 Fashion Street, Mumbai, India</p>
+                        </div>
+                    </div>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Name" class="w-full p-3 rounded-lg border">
+                        <input type="email" placeholder="Email" class="w-full p-3 rounded-lg border">
+                        <textarea placeholder="Message" rows="4" class="w-full p-3 rounded-lg border"></textarea>
+                        <button type="submit" class="w-full bg-pink-600 text-white py-3 rounded-lg hover:bg-pink-700 transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Genz'Q</h3>
+                    <p class="text-gray-400">Modern fashion for the modern woman.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-pink-400">About Us</a></li>
+                        <li><a href="#" class="hover:text-pink-400">Size Guide</a></li>
+                        <li><a href="#" class="hover:text-pink-400">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-pink-400"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-pink-400"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-pink-400"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Newsletter</h4>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="p-2 rounded-l-lg flex-1">
+                        <button class="bg-pink-600 px-4 rounded-r-lg hover:bg-pink-700">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.bi-list').addEventListener('click', function() {
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'fixed inset-0 bg-white z-50 p-4';
+            mobileMenu.innerHTML = `
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-2xl font-bold text-pink-600">Genz'Q</h2>
+                    <button class="text-2xl" onclick="this.parentElement.parentElement.remove()">&times;</button>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <a href="#" class="text-gray-600 text-lg">Home</a>
+                    <a href="#new-arrivals" class="text-gray-600 text-lg">New Arrivals</a>
+                    <a href="#categories" class="text-gray-600 text-lg">Categories</a>
+                    <a href="#contact" class="text-gray-600 text-lg">Contact</a>
+                </div>
+            `;
+            document.body.appendChild(mobileMenu);
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
